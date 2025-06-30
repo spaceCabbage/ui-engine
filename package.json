@@ -1,0 +1,25 @@
+{
+  "name": "ui-engine",
+  "version": "1.0.0",
+  "description": "A Vue component library and design system for building consistent, scalable user interfaces across our applications.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spaceCabbage/ui-engine.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spaceCabbage/ui-engine/issues"
+  },
+  "homepage": "https://github.com/spaceCabbage/ui-engine#readme",
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.11",
+    "tailwindcss": "^4.1.11",
+    "vue": "^3.5.17"
+  }
+}
