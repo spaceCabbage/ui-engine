@@ -2,9 +2,23 @@
   "name": "ui-engine",
   "version": "1.0.0",
   "description": "A Vue component library and design system for building consistent, scalable user interfaces across our applications.",
-  "main": "index.js",
+  "main": "dist/ui-engine.umd.js",
+  "module": "dist/ui-engine.es.js",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/ui-engine.es.js",
+      "require": "./dist/ui-engine.umd.js"
+    },
+    "./style.css": "./dist/style.css"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
@@ -17,9 +31,14 @@
     "url": "https://github.com/spaceCabbage/ui-engine/issues"
   },
   "homepage": "https://github.com/spaceCabbage/ui-engine#readme",
-  "dependencies": {
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.0",
     "@tailwindcss/vite": "^4.1.11",
     "tailwindcss": "^4.1.11",
+    "vite": "^5.0.0",
     "vue": "^3.5.17"
   }
 }
